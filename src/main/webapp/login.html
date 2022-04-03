@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+<meta http-equiv="content-type"
+	content="application/xhtml+xml; charset=UTF-8" />
+<title>Login</title>
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+	<h1>Hello App Engine!</h1>
+
+	<p></p>
+	<i class="fa fa-cloud" style="font-size: 24px;"></i>
+	<i class="fa fa-cloud" style="font-size: 36px;"></i>
+
+	<form action="login" method="POST">
+		<div class="container">
+			<h1 style="text-align: center;">Login</h1>
+			<p><h3 style="text-align: center;">Please fill in this form to login into your account.</h3>
+
+			<hr>
+
+			<label for="usernameLogin"><b>USERNAME*</b></label> <input
+				type="text" placeholder="Enter Username" name="usernameLogin"
+				id="usernameLogin" required> <label for="pswLogin"><b>PASSWORD*</b></label>
+			<input type="password" placeholder="Enter Password" name="pswLogin"
+				id="pswLogin" required> <a href='login'></a>
+			<button type="submit" class="loginbtn">Login</button>
+
+			<label> <input type="checkbox" checked="checked"
+				name="rememberLogin" id="rememberLogin"> Remember me
+			</label>
+		</div>
+
+		<div>
+			<p>
+				Return to <a href="./index.html">Sign up</a>.
+			</p>
+			<!-- 
+			<span class="psw">Forgot <a href="#">password?</a></span> -->
+		</div>
+	</form>
+
+</body>
+</html>

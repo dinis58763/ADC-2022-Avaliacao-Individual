@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+<meta http-equiv="content-type"
+	content="application/xhtml+xml; charset=UTF-8" />
+<title>USER Menu</title>
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+	<p></p>
+	<i class="fa fa-cloud" style="font-size: 24px;"></i>
+	<i class="fa fa-cloud" style="font-size: 36px;"></i>
+	<i class="fa fa-cloud" style="font-size: 48px; color: green;"></i>
+
+	<form action="usermenu" method="POST">
+		<div class="container">
+			<h1 style="text-align: center;">User Menu</h1>
+			<p><h3 style="text-align: center;">So great to see you here!</h3>
+
+			<hr>
+
+			<label for="username"><b>USERNAME*</b></label> 
+			<input type="text" placeholder="Enter your Username" name="username" id="username" required> 
+				<label for="email"><b>EMAIL</b></label> 
+				<input type="text" placeholder="EMAIL CAN'T BE CHANGED" name="email" id="email" readonly="readonly"> 
+				<label for="name"><b>NAME</b></label> 
+				<input type="text" placeholder="NAME CAN'T BE CHANGED" name="name" id="name" readonly="readonly">
+
+			<label for="psw"><b>PASSWORD</b></label> 
+			<input type="password" placeholder="GO TO UPDATE PASSWORD" name="psw" id="psw" readonly="readonly"> 
+				<label for="psw-repeat"><b>REPEAT PASSWORD</b></label> 
+				<input type="password" placeholder="GO TO UPDATE PASSWORD" name="psw-repeat" id="psw-repeat" readonly="readonly"> 
+			<p></p>
+			
+			<label for="profile"><b>PROFILE</b></label> 
+			<select name="profile">
+				<option value="public">PUBLIC</option>
+				<option value="private" selected>PRIVATE</option>
+			</select>
+
+			<p></p>
+
+			<label for="home-phone"><b>HOME PHONE</b></label> <input type="tel"
+				placeholder="Only +351 allowed" name="home-phone" id="home-phone">
+
+			<p></p>
+
+			<label for="mobile-phone"><b>MOBILE PHONE</b></label> <input
+				type="tel" placeholder="Only +351 allowed" name="mobile-phone"
+				id="mobile-phone">
+
+			<p></p>
+
+			<label for="address"><b>ADDRESS</b></label> <input type="text"
+				placeholder="Enter your Address" name="addr" id="addr"> <label
+				for="nif"><b>NIF</b></label> <input type="number"
+				placeholder="Enter NIF" name="nif" id="nif">
+
+			<p></p>
+
+			<label for="role"><b>ROLE</b></label> 
+			<select name="role">
+				<option value="superuser">SUPERUSER</option>
+				<option value="gs">GS</option>
+				<option value="gbo">GBO</option>
+				<option value="user" selected>USER</option>
+			</select>
+
+			<p></p>
+			
+			<label for="status"><b>STATUS</b></label> 
+			<select name="status">
+				<option value="active">ACTIVE</option>
+				<option value="inactive" selected>INACTIVE</option>
+			</select>
+
+			<p>
+
+			<label for="image"><b>PHOTO</b></label> <input type="image"
+				src="submit.gif" alt="Submit" style="float: right" width="width"
+				height="height">
+
+			<hr>
+
+			<p>
+				By updating an account you agree to our <a
+					href="https://policies.google.com/terms">Terms & Privacy</a>.
+			</p>
+
+			<!-- CHANGED!! -->
+			<a href='gbomenu'></a>
+
+			<button type="submit" class="updatebtn">Update Profile</button>
+
+		</div>
+
+		<div class="container signin">
+			<p>
+					<a href="./deleteMenuUSER.html">Delete Account</a>
+			</p>
+		</div>	
+		
+		<div class="container signin">
+			<p>
+					<a href="./updatePassword.html">Update Password</a>
+			</p>
+		</div>
+		
+		<div class="container signin">
+			<p>
+					<a href="./listMenuUSER.html">List Users</a>
+			</p>
+		</div>
+		
+		<div class="container signin">
+			<p>
+					<a href="./logout.html">Log Out</a>
+			</p>
+		</div>	
+		
+	</form>
+
+</body>
+</html>

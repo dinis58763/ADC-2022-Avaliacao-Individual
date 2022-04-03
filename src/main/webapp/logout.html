@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+<meta http-equiv="content-type"
+	content="application/xhtml+xml; charset=UTF-8" />
+<title>Google App Engine</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<h1 style="text-align: center;">Log Out Account</h1>
+	<p>
+	<h3 style="text-align: center;">Please fill in this form if you want to log out from your account.</h3>
+	<form action="logout" method="GET">
+
+		<div class="container">
+
+			<label for="usernameLogout"><b>Username*</b></label> 
+				<input type="text" placeholder="Enter Username" name="usernameLogout" id="usernameLogout" required> 
+			
+			<label for="pswLogout"><b>Password*</b></label>
+				<input type="password" placeholder="Enter Password" name="pswLogout" id="pswLogout" required> 
+			
+			<label for="pswCheckLogout"><b>Repeat Password*</b></label>
+				<input type="password" placeholder="Repeat Password" name="pswCheckLogout" id="pswCheckLogout" required> 
+				
+			<a href='logout'></a>
+				
+			<button type="submit" class="loginbtn">Log Out</button>
+			
+
+		</div>
+
+		<div>
+			<p>
+				Want to stay a bit longer? We get it! Go to the back page.
+			</p>
+			<!-- 
+			<span class="psw">Forgot <a href="#">password?</a></span> -->
+		</div>
+	</form>
+
+</body>
+</html>

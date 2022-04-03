@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+<meta http-equiv="content-type"
+	content="application/xhtml+xml; charset=UTF-8" />
+<title>INACTIVE Menu</title>
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+	<p></p>
+	<i class="fa fa-cloud" style="font-size: 24px;"></i>
+	<i class="fa fa-cloud" style="font-size: 36px;"></i>
+	<i class="fa fa-cloud" style="font-size: 48px; color: grey;"></i>
+
+	<form action="inactivemenu" method="POST">
+		<div class="container">
+			<h1 style="text-align: center;">Inactive Menu</h1>
+			<p><h3 style="text-align: center;">Wait for activation, at the moment you are inactive</h3>
+
+			<hr>
+
+			<label for="username"><b>USERNAME*</b></label> 
+			<input type="text" placeholder="INACTIVE" name="username" id="username" readonly="readonly"> 
+				<label for="email"><b>EMAIL*</b></label> 
+				<input type="text" placeholder="INACTIVE" name="email" id="email" readonly="readonly"> 
+				<label for="name"><b>NAME*</b></label> 
+				<input type="text" placeholder="INACTIVE" name="name" id="name" readonly="readonly">
+
+			<label for="psw"><b>PASSWORD*</b></label> 
+			<input type="password" placeholder="INACTIVE" name="psw" id="psw" readonly="readonly"> 
+				<label for="psw-repeat"><b>REPEAT PASSWORD*</b></label> 
+				<input type="password" placeholder="INACTIVE" name="psw-repeat" id="psw-repeat" readonly="readonly"> 
+			<p></p>
+			
+			<label for="profile"><b>PROFILE</b></label> 
+			<select name="profile">
+			</select>
+
+			<p></p>
+
+			<label for="home-phone"><b>HOME PHONE</b></label> <input type="tel"
+				placeholder="INACTIVE" name="home-phone" id="home-phone" readonly="readonly">
+
+			<p></p>
+
+			<label for="mobile-phone"><b>MOBILE PHONE</b></label> 
+			<input type="tel" placeholder="INACTIVE" name="mobile-phone" id="mobile-phone" readonly="readonly">
+
+			<p></p>
+
+			<label for="address"><b>ADDRESS</b></label>
+			<input type="text" placeholder="INACTIVE" name="addr" id="addr" readonly="readonly"> 
+			<label for="nif"><b>NIF</b></label> 
+			<input type="number" placeholder="INACTIVE" name="nif" id="nif" readonly="readonly">
+
+			<p></p>
+
+			<label for="role"><b>ROLE</b></label> 
+			<select name="role">
+			</select>
+
+			<p></p>
+			
+			<label for="status"><b>STATUS</b></label> 
+			<select name="status">
+			</select>
+
+			<p>
+
+			<label for="image"><b>PHOTO</b></label>
+
+			<hr>
+
+			<p>
+				By updating an account you agree to our <a
+					href="https://policies.google.com/terms">Terms & Privacy</a>.
+			</p>
+
+			<!-- CHANGED!! -->
+			<a href='inactivemenu'></a>
+
+			<button type="button" class="inactivebtn">Can't Update Profile</button>
+
+		</div>
+
+		<div class="container signin">
+			<p>
+					<a href="./delete.html">Delete Account</a>
+			</p>
+		</div>	
+		
+		<div class="container signin">
+			<p>
+					Update Password
+			</p>
+		</div>
+		
+		<div class="container signin">
+			<p>
+					List Users
+			</p>
+		</div>
+		
+		<div class="container signin">
+			<p>
+					<a href="./logout.html">Log Out</a>
+			</p>
+		</div>	
+		
+	</form>
+
+</body>
+</html>

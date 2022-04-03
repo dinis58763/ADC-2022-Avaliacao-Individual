@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+<meta http-equiv="content-type"
+	content="application/xhtml+xml; charset=UTF-8" />
+<title>Google App Engine</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<h1 style="text-align: center;">Delete Account Super User</h1>
+	<p>
+	<h3 style="text-align: center;">Please fill in this form if you want to delete any account in the system.</h3>
+	<form action="deleteSU" method="GET">
+
+		<div class="container">
+
+			<label for="usernameDelete"><b>Username*</b></label> 
+				<input type="text" placeholder="Enter Username" name="usernameDelete" id="usernameDelete" required> 
+			
+			<label for="pswDelete"><b>Password*</b></label>
+				<input type="password" placeholder="Enter Password" name="pswDelete" id="pswDelete" required> 
+			
+			<label for="pswCheckDelete"><b>Repeat Password*</b></label>
+				<input type="password" placeholder="Repeat Password" name="psw-repeatDelete" id="psw-repeatDelete" required> 
+				
+			<a href='deleteSU'></a>
+				
+			<button type="submit" class="updatesubtn">Delete Account</button>
+		
+		</div>
+
+		<div>
+			<p>
+				Regret it? Go to the back page.
+			</p>
+			<!-- 
+			<span class="psw">Forgot <a href="#">password?</a></span> -->
+		</div>
+	</form>
+
+</body>
+</html>
